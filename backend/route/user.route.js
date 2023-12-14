@@ -3,8 +3,12 @@ const { UserModel } = require("../model/user.model")
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 const { BlacklistModel } = require("../model/blackList.model")
+const { activityTracker } = require("../middleware/activityTracker")
+const { timeLogger } = require("../middleware/timeLogger")
 
 const userRouter = express.Router()
+userRouter.use(activityTracker)
+userRouter.use(timeLogger)
 
 userRouter.post("/register",async(req,res)=>{
     const {username,email,pass}=req.body
@@ -24,7 +28,7 @@ userRouter.post("/register",async(req,res)=>{
                 }
             });
         }else{
-            res.send("pass should contain atleast one Uppercase one special symbol and one number")
+            res.send("password atleast contain 8 charactrs, atleast one upper case, one number and special character")
         }
     }
   } catch (error) {
@@ -41,8 +45,8 @@ userRouter.post("/login",async(req,res)=>{
         if(user){
             bcrypt.compare(pass, user.pass, (err, result)=> {
                 if(result){
-                    const token = jwt.sign({name:"Harsh"},"ranjan",{expiresIn:"7d"})
-                    const refreshToken=jwt.sign({batch:"NEM111"},"masai",{expiresIn:"28d"})
+                    const token = jwt.sign({name:"Harsh"},"masai",{expiresIn:"7d"})
+                    const refreshToken=jwt.sign({batch:"NEM111"},"school",{expiresIn:"28d"})
                     res.status(200).send({"msg":"Login Successfull...","token":token,"refreshToken":refreshToken})
                 }else{
                     res.status(200).send({"msg":"Wrong Credential..."})
