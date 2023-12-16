@@ -30,26 +30,26 @@ subjectsRouter.get("/maths", async (req, res) => {
   }
 });
 
-// subjectsRouter.get("/physics", async (req, res) => {
-//   try {
-//     let { search, category } = req.query;
-//     let filter = {};
-//     if (search) {
-//       filter.$or = [
-//         { title: { $regex: search, $options: "i" } },
-//         { description: { $regex: search, $options: "i" } },
-//       ];
-//     }
-//     if (category) {
-//       filter.category = category;
-//     }
+subjectsRouter.get("/physics", async (req, res) => {
+  try {
+    let { search, category } = req.query;
+    let filter = {};
+    if (search) {
+      filter.$or = [
+        { title: { $regex: search, $options: "i" } },
+        { description: { $regex: search, $options: "i" } },
+      ];
+    }
+    if (category) {
+      filter.category = category;
+    }
 
-//     const data = await PhysicsModel.find(filter);
-//     res.status(200).json(data);
-//   } catch (err) {
-//     res.status(500).json({ err: err.message });
-//   }
-// });
+    const data = await PhysicsModel.find(filter);
+    res.status(200).json(data);
+  } catch (err) {
+    res.status(500).json({ err: err.message });
+  }
+});
 // subjectsRouter.get("/english", async (req, res) => {
 //   try {
 //     let { search, category } = req.query;
