@@ -122,4 +122,18 @@ const SectionTitle = styled.h1`
   font-weight: bold;
 `;
 
+const AboutContent = styled.div`
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2%;
+  gap: 3%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+  }
+`;
+
 
