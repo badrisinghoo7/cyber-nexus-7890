@@ -136,4 +136,19 @@ const AboutContent = styled.div`
   }
 `;
 
+const AboutImage = styled.div`
+  margin-top: 70px;
+  width: 90%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+`;
+
+const SectionDivider = styled.hr`
+  margin: 40px auto;
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  width: 80%;
+`;
+
 
