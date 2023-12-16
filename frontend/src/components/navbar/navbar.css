@@ -1,5 +1,5 @@
 #navbar{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 1% 2%;
     display: flex;
     justify-content: space-between;
@@ -15,28 +15,128 @@
     object-fit: cover;
     /* max-width: 8rem; */
     max-height: 2.8rem;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 #navbar > div,  #navbar > p{
     /* border: 1px solid blue; */
 }
 
+.home__text{
+    padding: .5rem;
+    color: black;
+    /* padding-bottom: .8rem; */
+    /* border: 1px solid blue; */
+}
+
+.sub__text{
+    /* border: 1px solid blue; */
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    position: relative;
+}
+
+.home__text:hover{
+    border-bottom: 2px solid var(--color-primary-variant);
+    border-radius: .3rem;
+}
+
+.sub__text:hover{
+    border-bottom: 2px solid var(--color-primary-variant);
+    border-radius: .3rem;
+}
+
+/* .sub__text:hover .menu__div{
+    display: block;
+} */
+
 .search__div{
-    width: 50%;
+    width: 55%;
     display: flex;
     justify-items: flex-start;
     align-items: center;
     border-radius: 2rem;
     padding: 1.5rem;
     height: 2rem;
-    border: 2px solid blue;
+    color: rgb(109, 109, 109);
+    background-color: #f6f7fb;
+    border: 1px solid grey;
 }
 
 .search__div > input{
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
     text-indent: 1rem;
     font-size: 1rem;
     height: 1.5rem;
     width: 100%;
+    background-color: #f6f7fb;
 }
+
+.link__div{
+    /* border: 3px dotted grey; */
+    display: flex;
+    gap: 1rem;
+}
+
+.link{
+    padding: .6rem;
+    border-radius: .5rem;
+    color: black;
+    font-size: .9rem;
+}
+
+.register{
+    background-color: var(--color-primary);
+    border-radius: .6rem;
+    padding: .5rem;
+    color: white;
+    font-size: .9rem;
+}
+
+.link:hover{
+    background-color:  var(--color-primary-variant);
+    color: white;
+}
+
+.register:hover{
+    background-color:var(--color-primary-variant)
+}
+
+.menu__div{
+    border: 1px solid grey;
+    border-radius: .5rem;
+    width: 22rem;    
+    background-color: white;
+    position: absolute;
+    top: 4rem;
+    /* left: 1rem; */
+    /* display: none; */
+}
+
+.menu__div > div{
+    /* border: 1px dotted red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem;
+}
+
+.menu__div > div:hover{
+    background-color: azure;
+}
+
+.menu__div > div > div{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+}
+
+/* .menu__div > div > div > img{
+    border: 1px solid blue;
+    width: 100%;
+} */
+

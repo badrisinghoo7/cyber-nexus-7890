@@ -19,3 +19,11 @@ html {
   display: none;
 }
 
+
+:root {
+  --color-primary: purple;
+  --color-primary-variant:  #5e1c3b;
+
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+}
