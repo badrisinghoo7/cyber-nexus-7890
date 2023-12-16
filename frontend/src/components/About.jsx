@@ -151,4 +151,52 @@ const SectionDivider = styled.hr`
   width: 80%;
 `;
 
+const MissionVisionContainer = styled.div`
+  display: flex;
+  gap: 2%;
+  width: 90%;
+  margin: auto;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+  }
+`;
+
+const MissionVisionImage = styled.div`
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 5%;
+  padding: 1%;
+`;
+
+const MissionVisionText = styled.div`
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 3%;
+  text-align: justify;
+
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+`;
+
+const JewelryCollectionDescription = styled.div`
+  text-align: center;
+  padding: 2%;
+`;
+
+const JewelryCollectionImage = styled.div`
+  text-align: center;
+  padding: 2%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+`;
+
+export default AboutUs;
