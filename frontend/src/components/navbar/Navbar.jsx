@@ -3,6 +3,7 @@ import './navbar.css'
 import logo from '../../assets/logo.jpg'
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Navbar = () => {
   return (
@@ -13,7 +14,9 @@ const Navbar = () => {
         </div>
 
         <p>Home</p>
-        <p>Subjects</p>
+        <p>Subjects
+            <MdKeyboardArrowDown />
+        </p>
 
         <div className='search__div'>
             <FaSearch />
