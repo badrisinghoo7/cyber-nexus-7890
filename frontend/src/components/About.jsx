@@ -41,4 +41,33 @@ const AboutUs = () => {
         </MissionVisionContainer>
         <SectionDivider />
         <MissionVisionContainer>
-       
+          <MissionVisionText>
+            <h2>Vision</h2>
+            <p>
+              "Our vision at TreasureNest is to be a leading jewelry store
+              known for offering timeless and one-of-a-kind jewelry pieces. We
+              aspire to set new standards in the jewelry industry by combining
+              craftsmanship, innovation, and style. We envision a future where
+              our jewelry enhances the beauty and confidence of those who wear
+              it."
+            </p>
+          </MissionVisionText>
+          <MissionVisionImage>
+            <img src="https://plus.unsplash.com/premium_photo-1664301627859-b21ebb8f891d?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vision Image" />
+          </MissionVisionImage>
+        </MissionVisionContainer>
+      </Section>
+      <SectionDivider />
+      <Section>
+        <SectionTitle>Our Jewelry Collection</SectionTitle>
+        <JewelryCollectionDescription>
+          <p>
+            At TreasureNest, we take pride in curating a collection of
+            jewelry that combines timeless elegance and contemporary style.
+            Explore our stunning range of pieces, from exquisite engagement
+            rings to statement necklaces and classic bracelets. Each piece is
+            handcrafted with precision and showcases the highest quality
+            gemstones and materials.
+          </p>
+        </JewelryCollectionDescription>
+     
