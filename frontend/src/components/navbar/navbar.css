@@ -1,0 +1,42 @@
+#navbar{
+    border: 2px solid red;
+    padding: 1% 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__div{
+    width: 8%;
+}
+
+.logo__div > img{
+    width: 100%;
+    object-fit: cover;
+    /* max-width: 8rem; */
+    max-height: 2.8rem;
+    border: 1px solid blue;
+}
+
+#navbar > div,  #navbar > p{
+    /* border: 1px solid blue; */
+}
+
+.search__div{
+    width: 50%;
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    height: 2rem;
+    border: 2px solid blue;
+}
+
+.search__div > input{
+    border: 2px dashed red;
+    text-indent: 1rem;
+    font-size: 1rem;
+    height: 1.5rem;
+    width: 100%;
+}
