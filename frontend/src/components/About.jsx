@@ -95,4 +95,29 @@ const AboutUs = () => {
         <JewelryCollectionImage>
           <img src="https://plus.unsplash.com/premium_photo-1661645473770-90d750452fa0?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jewelry Collection" />
         </JewelryCollectionImage>
-    
+      </Section>
+    </AboutUsContainer>
+  );
+};
+
+const AboutUsContainer = styled.div`
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 5%;
+
+  img{
+    width: 90%;
+  }
+`;
+
+const Section = styled.div`
+  margin-top: 20px;
+`;
+
+const SectionTitle = styled.h1`
+  font-size: 30px;
+  font-weight: bold;
+`;
