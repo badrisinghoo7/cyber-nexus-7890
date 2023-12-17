@@ -3,6 +3,7 @@ const cors = require("cors");
 const { userRouter } = require("./route/user.route");
 const jwt = require("jsonwebtoken");
 const { subjectsRouter } = require("./route/subjects.routes");
+const { connection } = require("mongoose");
 
 require("dotenv").config();
 
@@ -28,6 +29,13 @@ app.get("/refreshtoken", (req, res) => {
   }
 });
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server is running on port ${process.env.PORT}`);
+app.listen(process.env.PORT, async () => {
+  try {
+    await connection;
+    console.log("MongoDb is connected");
+
+    console.log(`Server is running on port ${process.env.PORT}`);
+  } catch (error) {
+    console.log(error);
+  }
 });
