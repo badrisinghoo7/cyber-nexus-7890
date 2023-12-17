@@ -1,7 +1,3 @@
-const mongoose = require("mongoose");
-require("dotenv").config();
-const connection = mongoose.connect(process.env.mongo_URL);
 
-module.exports = {
-  connection,
-};
+mongoURL="mongodb+srv://sandeep:<password>@cluster0.9rglqlu.mongodb.net/?retryWrites=true&w=majority"
+
