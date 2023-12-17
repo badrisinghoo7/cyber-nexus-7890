@@ -1,7 +1,7 @@
 #footer{
     /* border: 2px solid red; */
     padding: 0 10%;
-    background-color: bisque;
+    background-color: var(--color-primary-variant);
 }
 
 .sections{
@@ -32,6 +32,10 @@
     color: black;
     font-size: 90%;
     font-weight: 500;
+}
+
+.section a:hover{
+    color: white;
 }
 
 .countries{

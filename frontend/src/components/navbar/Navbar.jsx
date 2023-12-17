@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './navbar.css'
 import logo from '../../assets/logo.jpg'
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
+import { IoIosArrowDown } from "react-icons/io";
+import { RiArrowRightSLine } from "react-icons/ri";
 
 const Navbar = () => {
+    const [ismenu, setIsMenu] = useState(false)
   return (
     <section id='navbar'>
 
@@ -12,19 +15,27 @@ const Navbar = () => {
             <img src={logo} alt="" />
         </div>
 
-        <p>Home</p>
-        <p>Subjects</p>
+        <Link className='home__text' to='/' >Home</Link>
+        <div className='sub__text' onClick={()=>setIsMenu(!ismenu)} >Subjects <IoIosArrowDown />
+       {ismenu && <div className='menu__div'>
+            <div><div><img width="40" height="40" src="https://img.icons8.com/plasticine/100/language.png" alt="language"/>Languages</div><RiArrowRightSLine /> </div>
+            <div><div><img width="40" height="40" src="https://img.icons8.com/plasticine/100/000000/calculator.png" alt="calculator"/>Math</div> <RiArrowRightSLine /> </div>
+            <div><div><img width="40" height="40" src="https://img.icons8.com/plasticine/100/000000/microscope.png" alt="microscope"/>Science</div> <RiArrowRightSLine /> </div>
+            <div><div><img width="40" height="40" src="https://img.icons8.com/plasticine/100/social-studies.png" alt="social-studies"/>Social Science</div><RiArrowRightSLine /> </div>
+            <div><div><img width="40" height="40" src="https://img.icons8.com/fluency/48/studio-display.png" alt="studio-display"/>Others</div><RiArrowRightSLine /> </div>
+        </div>}
+        </div>
 
         <div className='search__div'>
             <FaSearch />
-            <input type="text" placeholder="find it here" id="" />
+            <input type="text" placeholder="search it here" id="" />
         </div>
 
-        <div>
-            <Link to='/login'>Login</Link>
-            <Link to='/register'>SignUp</Link>
+        <div className='link__div'>
+            <Link className='link' to='/login'>Login</Link>
+            <Link className='register' to='/register'>SignUp</Link>
         </div>
-
+        
     </section>
   )
 }
