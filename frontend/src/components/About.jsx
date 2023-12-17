@@ -12,7 +12,7 @@ const About = () => {
 
           <div className="col-md-12 text-center">
             <h2 className="section-title">
-              The Team Behind Study Brains
+              The Team Behind Study Buddy
             </h2>
             <p className="section-subtitle">{message}</p>
           </div>
