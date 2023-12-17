@@ -1,3 +1,8 @@
+const mongoose=require("mongoose")
+require("dotenv").config()
 
-mongoURL="mongodb+srv://sandeep:<password>@cluster0.9rglqlu.mongodb.net/?retryWrites=true&w=majority"
+const connection=mongoose.connect(process.env.mongoURL)
 
+module.exports={
+    connection
+}
