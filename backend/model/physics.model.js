@@ -17,11 +17,4 @@ module.exports = {
     PhysicsModel,
 };
 
-/*first -  total subjects ka schema bnana hai
-    -MathsSchema
-    -physicsSchema
-    -chemistrySchema
-    -englishSchema
-    -hindiSchema
-    -SolcialStudiesSchema
-*/
+

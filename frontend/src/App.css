@@ -9,6 +9,7 @@
   list-style: none;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  transition: .1s;
 }
 
 html {
@@ -19,3 +20,14 @@ html {
   display: none;
 }
 
+
+:root {
+  --color-primary: #8E44AD;
+  --color-primary-variant:  #9B59B6;
+
+  --color-Secondary:  #3498DB;
+  --color-Secondary-variant: #E74C3C;
+
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+}
