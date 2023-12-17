@@ -13,7 +13,7 @@
     padding: 2rem;
     /* border: 2px solid white; */
     color: rgb(228, 179, 2);
-    color: purple;
+    color: var(--color-white);
     width: 45%;
     display: flex;
     justify-content: center;
@@ -29,13 +29,12 @@
 .info__div >p{
     font-size: 1.2rem;
     font-weight: 500;
-    color: white;
+    color: var(--color-Secondary-variant);
     margin-top: 1.5rem;
 }
 
 .sign__btn{
     background-color:var(--color-primary);
-    background-color: #341423;
     padding: 1rem;
     border-radius: .5rem;
     color: white;
@@ -46,3 +45,64 @@
 .sign__btn:hover{
     background-color:var(--color-primary-variant);
 }
+
+.stats{
+    /* border: 2px dotted red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3rem;
+    align-items: center;
+    padding: 4% 0;
+}
+
+.stats > h1{
+    /* border: 2px dotted red; */
+    font-size: 2.5rem;
+}
+
+.img__div{
+    /* border: 2px dotted red; */
+    width: 65%;
+    margin: auto;
+}
+
+.stats > div > img{
+    width: 100%;
+}
+
+.link__div{
+}
+
+.stats .link{
+    background-color: var(--color-primary);
+    color: white;
+    padding:  1rem 1.5rem;
+    
+}
+
+.coming__features{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 0;
+    /* border: 2px dotted red; */
+    
+}
+
+.coming__features{
+    font-size: 1.5rem;
+}
+
+.coming__features > div{
+    width: 65%;
+    
+}
+
+.coming__features > div > img{
+    width: 100%;
+
+}
+

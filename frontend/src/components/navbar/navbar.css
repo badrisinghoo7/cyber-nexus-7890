@@ -4,6 +4,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-white);
+
 }
 
 .logo__div{
@@ -91,13 +95,13 @@
     background-color: var(--color-primary);
     border-radius: .6rem;
     padding: .5rem;
-    color: white;
+    color: var(--color-white);
     font-size: .9rem;
 }
 
 .link:hover{
     background-color:  var(--color-primary-variant);
-    color: white;
+    color: var(--color-white);
 }
 
 .register:hover{
@@ -124,7 +128,7 @@
 }
 
 .menu__div > div:hover{
-    background-color: azure;
+    background-color: var(--color-primary);
 }
 
 .menu__div > div > div{
