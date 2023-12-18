@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const { userRouter } = require("./route/user.route");
+const { userRouter } = require("./route/user.route.js");
 const jwt = require("jsonwebtoken");
 const { subjectsRouter } = require("./route/subjects.routes");
 const { connection } = require("mongoose");

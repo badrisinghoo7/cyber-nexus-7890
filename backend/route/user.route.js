@@ -9,8 +9,10 @@ const { timeLogger } = require("../middleware/timeLogger");
 const userRouter = express.Router();
 // userRouter.use(activityTracker);
 // userRouter.use(timeLogger);
+console.log(userRouter);
 
 userRouter.post("/register", async (req, res) => {
+  console.log(userRouter);
   const { username, email, pass } = req.body;
   try {
     const user = await UserModel.findOne({ email });
