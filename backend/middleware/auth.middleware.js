@@ -6,10 +6,11 @@ if(token){
     jwt.verify(token, 'masai', (err, decoded)=> {
        if(decoded){
         // console.log(decoded)
-        req.body.userID=decoded.userID
-        req.body.username=decoded.username
+        req.body.subject=decoded.subject
         next()
-       }else{
+       }
+  
+       else{
         res.send({"msg":"You are not authorised"})
        }
       })
