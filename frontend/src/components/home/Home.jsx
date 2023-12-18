@@ -5,6 +5,7 @@ import stats from '../../assets/stats.png'
 import coming from '../../assets/coming.png'
 import Plus from '../plus/Plus'
 import Gallery from '../gallery/Gallery'
+import Carousal from '../carousal/Carousal'
 
 const Home = () => {
   return (
@@ -36,6 +37,7 @@ const Home = () => {
             <img src={coming} alt="" />
           </div>
         </div>
+        {/* <Carousal /> */}
         <Plus />
         <Gallery />
     </section>
