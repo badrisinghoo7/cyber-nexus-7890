@@ -25,7 +25,7 @@ const Navbar = () => {
         {ismenu && (
           <div className="menu__div">
             <div>
-              <div>
+              {/* <div>
                 <img
                   width="40"
                   height="40"
@@ -34,8 +34,8 @@ const Navbar = () => {
                 />
                 Languages
               </div>
-              <RiArrowRightSLine />{" "}
-            </div>
+              <RiArrowRightSLine />{" "} */}
+              {/* </div>
             <div>
               <div>
                 <img
@@ -48,8 +48,8 @@ const Navbar = () => {
               </div>{" "}
               <RiArrowRightSLine />{" "}
             </div>
-            <div>
-              <div>
+            <div> */}
+              {/* <div>
                 <img
                   width="40"
                   height="40"
@@ -59,8 +59,8 @@ const Navbar = () => {
                 Science
               </div>{" "}
               <RiArrowRightSLine />{" "}
-            </div>
-            <div>
+            </div> */}
+              {/* <div> */}
               <div>
                 <img
                   width="40"
@@ -68,12 +68,12 @@ const Navbar = () => {
                   src="https://img.icons8.com/plasticine/100/social-studies.png"
                   alt="social-studies"
                 />
-                <Link to={"/subject"}> Geoghraphy</Link>
+                <Link to={"/subject"}> All Questions</Link>
               </div>
               <RiArrowRightSLine />{" "}
             </div>
-            <div>
-              <div>
+            {/* <div> */}
+            {/* <div>
                 <img
                   width="40"
                   height="40"
@@ -83,7 +83,7 @@ const Navbar = () => {
                 Others
               </div>
               <RiArrowRightSLine />{" "}
-            </div>
+            </div> */}
           </div>
         )}
       </div>

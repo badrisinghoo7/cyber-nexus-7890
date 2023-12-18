@@ -1,8 +1,6 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import SubjectCard from "./subjectCard";
-import styled,{ keyframes } from "styled-components"
-
-
+import styled, { keyframes } from "styled-components";
 
 const fadeIn = keyframes`
   from {
@@ -26,7 +24,6 @@ const HeadContainer = styled.div`
   animation: ${fadeIn} 1s ease-in-out; /* Apply the fade-in animation */
 `;
 
-
 const SubjectList = () => {
   const [data, setData] = useState([]);
 
@@ -40,18 +37,22 @@ const SubjectList = () => {
       .catch((error) => console.log(error));
   }, []);
 
-  return <div>
-    <HeadContainer>Geography</HeadContainer>
-    {
-        data?.map((item,index)=>{
-            return <SubjectCard key={item._id} {...item}/>
-        })
-    }
-  </div>;
+  return (
+    <div>
+      <HeadContainer>Questions</HeadContainer>
+      <div
+        style={{
+          width: "90%",
+          display: "grid",
+          gridTemplateRow: "repeat(3, 1fr)",
+        }}
+      >
+        {data?.map((item, index) => {
+          return <SubjectCard key={item._id} {...item} />;
+        })}
+      </div>
+    </div>
+  );
 };
 
-
-
 export default SubjectList;
-
-

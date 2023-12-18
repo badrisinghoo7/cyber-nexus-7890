@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import logo from "../../assets/logo.jpg";
 
 const CardContainer = styled.div`
- 
   /* border: 1px solid #d24646; */
   background-color: antiquewhite;
   width: 60%;
@@ -51,8 +51,9 @@ const SubjectCard = (props) => {
   };
 
   return (
-    <div style={{ marginLeft: '450px' }}>
+    <div style={{ marginLeft: "450px" }}>
       <CardContainer>
+        <img src={logo} alt="" style={{ width: "100px", height: "100px" }} />
         <QuestionTitle>{props.question}</QuestionTitle>
         <Button onClick={handleQuestion}>
           {flag === false ? "Check answer" : "Hide answer"}
