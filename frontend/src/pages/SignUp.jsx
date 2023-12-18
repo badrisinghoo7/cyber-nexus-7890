@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { signup } from "../redux/Authentication/action";
 import { Link, Navigate } from "react-router-dom";
 import styled from "styled-components";
+import logo from "../assets/logo.jpg";
 
 const initialState = {
   email: "",
@@ -37,7 +38,14 @@ function Signup() {
   return (
     <DIV>
       <div className="box">
-        <h1> Signup</h1>
+        <div className="logo">
+          <img
+            src={logo}
+            alt="image"
+            style={{ width: "200px", maxHeight: "10rem" }}
+          />
+          <h1>Login</h1>
+        </div>
         <form className="formData">
           <input
             type="email"
@@ -92,7 +100,15 @@ const DIV = styled.div`
     margin-top: 50px;
     margin-bottom: 50px;
   }
-
+  .logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logo h1 {
+    margin-right: 50px;
+    margin-top: 10px;
+  }
   .formData {
     display: flex;
     flex-direction: column;

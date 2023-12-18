@@ -68,7 +68,7 @@ const Navbar = () => {
                   src="https://img.icons8.com/plasticine/100/social-studies.png"
                   alt="social-studies"
                 />
-                Social Science
+                <Link to={"/subject"}> Geoghraphy</Link>
               </div>
               <RiArrowRightSLine />{" "}
             </div>

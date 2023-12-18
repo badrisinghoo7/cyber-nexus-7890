@@ -6,6 +6,7 @@ import { login } from "../redux/Authentication/action";
 import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { useRef } from "react";
 import { LOGIN_SUCCESS } from "../redux/actionTypes";
+import logo from "../assets/logo.jpg";
 
 function Login() {
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ function Login() {
     dispatch(login(email, password)).then((res) => {
       if (res.length > 0) {
         dispatch({ type: LOGIN_SUCCESS, payload: res });
-       
+
         localStorage.setItem("userDetails", JSON.stringify(res[0]));
         navigate(location.state || "/", { replace: true });
       } else {
@@ -38,7 +39,14 @@ function Login() {
   return (
     <DIV auth={isAuth}>
       <div className="box">
-        <h1>Login</h1>
+        <div className="logo">
+          <img
+            src={logo}
+            alt="image"
+            style={{ width: "200px", maxHeight: "10rem" }}
+          />
+          <h1>Login</h1>
+        </div>
 
         <form onSubmit={handleSubmit} className="formData">
           <input
@@ -77,6 +85,16 @@ const DIV = styled.div`
     border-radius: 10px;
     margin-bottom: 50px;
     margin-top: 50px;
+    /* background-color: black; */
+  }
+  .logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logo h1 {
+    margin-right: 50px;
+    margin-top: 10px;
   }
   .formData {
     display: flex;
