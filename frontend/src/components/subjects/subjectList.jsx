@@ -50,8 +50,6 @@ const SubjectList = () => {
   </div>;
 };
 
-
-
 export default SubjectList;
 
 
