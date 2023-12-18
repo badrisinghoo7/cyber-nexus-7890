@@ -8,7 +8,7 @@ Study Buddy is your dedicated online learning companion, empowering you to excel
 ## Deployment
 
 
-[Vercel Deployed Link:  Clickit](https://studybuddy-a11al1ck5-badrisinghoo7.vercel.app/)
+[Vercel Deployed Link:  Clickit](https://studybuddy-sigma.vercel.app/)
 
 
 
