@@ -18,42 +18,27 @@ Study Buddy is your dedicated online learning companion, empowering you to excel
 
 
  
-**Server:** mockAPI
+**Server:** Mongodb atlas
 
 
 ## Features
 
 User Features :
-- Landing Page
-- Product page
-- User Registration and Login
-- Add to Cart
+- HomePage2
+- LoginPage
+- Signup
  
  
 
 ## Project Screenshots
+![HomePage2](https://github.com/badrisinghoo7/cyber-nexus-7890/assets/105917107/db66ea85-93a1-4a91-abec-270a9f8626bf)
 
-- Landing Page
-<img src="https://github.com/Sushree-01/dainty-snake-6499/blob/main/Screenshots/Landing%20Page.PNG"  width="600" >
+![LoginPage](https://github.com/badrisinghoo7/cyber-nexus-7890/assets/105917107/e5e6e7d3-2185-494a-a25e-990a3bde660b)
 
-- Product Page
-<img src="https://github.com/Sushree-01/dainty-snake-6499/blob/main/Screenshots/Product%20Page(Store%20page).PNG"  width="600" >
+![Signup](https://github.com/badrisinghoo7/cyber-nexus-7890/assets/105917107/822c9345-8a98-465d-a83f-083296dfb692)
 
 
-- Pagination
-<img src="https://github.com/Sushree-01/dainty-snake-6499/blob/main/Screenshots/Pagination%20Feature.PNG"  width="600" >
 
-- Signup Page
-<img src="https://github.com/Sushree-01/dainty-snake-6499/blob/main/Screenshots/Signup%20page.PNG"  width="600" >
-
-- Login Page
-<img src="https://github.com/Sushree-01/dainty-snake-6499/blob/main/Screenshots/Login%20page.PNG"  width="600" >
-
-- Cart Page
-<img src="https://github.com/Sushree-01/dainty-snake-6499/blob/main/Screenshots/Cart%20page.PNG"  width="600" >
-
-- Verification Feature
-<img src="https://github.com/Sushree-01/dainty-snake-6499/blob/main/Screenshots/Account%20Verification%20System.PNG"  width="600" >
 
 
 ## Contributors
